@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script
 src='//in.fw-cdn.com/31597885/800675.js'
 chat='true'>
@@ -9,7 +9,7 @@ chat='true'>
 <script
 src='//in.fw-cdn.com/32146039/1145732.js'
 chat='true'>
-</script>
+</script> -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simple Web Form</title>
@@ -89,6 +89,17 @@ chat='true'>
 <button><span class="l7_2fn wixui-button__label">Send</span></button>
     </form>
     <script>  
+        function identify_call(){
+var new_contact = {
+	"First names":document.getElementbyId("name"),
+	 "Email":document.getElementbyId("email"), 
+	"company": {
+		"Name":document.getElementbyId("company"),
+	}
+};
+var identifier = "john.doe@example.com";
+fwcrm.identify(identifier, new_contact);
+        }
 document.querySelector("#Test_Form > button").type = "submit"; 
 </script>
 </div>
