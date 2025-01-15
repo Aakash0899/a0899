@@ -64,6 +64,7 @@ chat='true'>
             background-color: #45a049;
         }
     </style>
+ 
 </head>
 <body>
 
@@ -82,15 +83,9 @@ chat='true'>
 <label for="company">Your Company Name:</label>
 <input type="text" id="company" name="company" required>
 
-    var new_contact = {
-	"First name": "name", 
-	"Email": "email", 
-	"company": {
-		"Name": "company", 
-	}
-};
-var identifier = "email";
-fwcrm.identify(identifier, new_contact);
+ <label for="city">city:</label>
+        <textarea id="city" name="city" required></textarea>
+
 <button><span class="l7_2fn wixui-button__label">Send</span></button>
     </form>
     <script>  
