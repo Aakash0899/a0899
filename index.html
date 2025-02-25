@@ -6,10 +6,6 @@
 src='//in.fw-cdn.com/31597885/800675.js'
 chat='true'>
 </script>
-<script
-src='//in.fw-cdn.com/32146039/1145732.js'
-chat='true'>
-</script> 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simple Web Form</title>
@@ -77,24 +73,11 @@ chat='true'>
         <label for="email">Your Email:</label>
         <input type="email" id="email" name="email" required>
 
-<label for="company">Your Company Name:</label>
-<input type="text" id="company" name="company" required>
 	     <input type="hidden" id="course" name="course" value="ABC">
 
-<button onclick="identify_call()"><span class="l7_2fn wixui-button__label">Send</span></button>
+<button><span class="l7_2fn wixui-button__label">Send</span></button>
     </form>
     <script>  
-        function identify_call(){
-var new_contact = {
-	"First names":document.getElementbyId("name"),
-	 "Email":document.getElementbyId("email"), 
-	"company": {
-		"Name":document.getElementbyId("company"),
-	}
-};
-var identifier = document.getElementbyId("email");
-fwcrm.identify(identifier, new_contact);
-        }
 document.querySelector("#Test_Form > button").type = "submit"; 
 </script>
 </div>
